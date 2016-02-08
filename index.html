@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Freie und unfreie Lizenzen – Aktuelle Themen SSE</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -20,13 +20,488 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+			.reveal pre {
+				white-space: pre-wrap;
+			}
+			
+			.reveal li > pre {
+				margin-left: 0;
+			}
+
+			.reveal .row {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		</style>
 	</head>
+
 	<body>
+
 		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section style="text-align: left;">
+					<h1 style="font-size: 2.5em; line-height: 0.8em;">Lizenzen</h1>
+					<h3>Aktuelle Themen SSE</h3>
+					<p style="line-height: 0.8em; font-size: 1.2em;">
+						<small>
+							Benedict Etzel / <a href="https://github.com/beheh">@beheh</a>
+						</small><br>
+						<small><em class="fragment">&uarr; kein Rechtsanwalt</em></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>WTF?</h2>
+					<p>
+						AGPL ·
+						MIT ·
+						ISC ·
+						LGPL ·
+						Beerware ·
+						EUPL ·
+						3-clause BSD ·
+						Unlicense ·
+						GPL v2 ·
+						CC-BY-ND ·
+						Apache License 2.0 ·
+						MPL ·
+						EPL ·
+						CC0 ·
+						GPL v3 ·
+						WTFPL ·
+						2-clause BSD ·
+						CC-BY-NC-SA …
+					</p>
+				</section>
+
+				<section>
+					<h2>Weshalb?</h2>
+					<ul>
+						<li class="fragment">Ich möchte ein lizenziertes Werk nutzen</li>
+						<li class="fragment">Ich möchte ein Werk veröffentlichen</li>
+					</ul><br><br>
+					<p style="text-align: right; line-height: 0.9em; margin: 0 auto; width: 85%" class="fragment"> &#8599; Entwickler &rarr; &hellip; &rarr; Entwickler<br>Endnutzer &rarr; Entwickler &rarr; Entwickler &rarr; &hellip; &rarr; Entwickler<br>&#8600; &hellip; &rarr; Entwickler<br>&hellip;</p>
+				</section>
+
+				<section>
+					<h2>Was?</h2>
+					<ul>
+						<li class="fragment">Lizenzvertrag<ul>
+							<li>Lizenzgeber</li>
+							<li>Lizenznehmer</li>
+						</ul></li>
+						<li class="fragment">Vertragsangebot/-annahme</li>
+						<li class="fragment">Urheberrecht</li>
+						<li class="fragment">nicht nur für Software</li>
+						<li class="fragment">Mehrfachlizensierung ist möglich (auch: „or later“)</li>
+						<li class="fragment">Kommerziell und Frei schließen sich nicht aus:<br>„Free as in free speech, not as in free beer“</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Was tut eine Lizenz?</h2>
+					<ul>
+						<li class="fragment">Ausschluss von Gewährleistung</li>
+						<li class="fragment">Einräumung gewisser Rechte</li>
+						<li class="fragment">&hellip;ggf. unter bestimmten Voraussetzungen (z.B. Copyleft)</li>
+					</ul>
+					<p class="fragment">„Eine Lizenz stellt klar, dass ein Werk von anderen genutzt werden darf und soll“</p>
+				</section>
+
+				<section>
+					<h2>Wie mache ich Geld damit?</h2>
+					<ul>
+						<li class="fragment">Dual-licensing: Oracle/MySQL, ownCloud, GitLab</li>
+						<li class="fragment">Verkauf von Dienstleistung: Novell/OpenSUSE, Canonical/Ubuntu</li>
+						<li class="fragment">OpenSaaS: Wordpress VIP</li>
+						<li class="fragment">Werbung: AdBlockPlus Whitelist + Google, Mozilla/Firefox</li>
+						<li class="fragment">„Open Core“: IBM/Linux, Nvidia</li>
+						<li class="fragment">Relizensierung: Apple</li>
+						<li class="fragment">„Version Lagging“</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Wie?</h2>
+					<ul>
+						<li>Kommentar in alle Dateien</li>
+						<li>LICENSE</li>
+						<li>README</li>
+					</ul>
+					<p class="fragment">Fertig! <span class="fragment">&hellip;oder?</p>
+					<p><strong class="fragment">Ja, aber:</strong> <span class="fragment">Contributor License Agreement</span><p>
+				</section>
+
+				<section>
+					<h2>Was steht zur Auswahl?</h2>
+					<ul>
+						<li class="fragment"><strong>Trade Secret</strong><br>„niemand kann irgendetwas damit tun“</li>
+						<li class="fragment"><strong>Proprietary License</strong><br>„manche können manche Dinge tun“</li>
+						<li class="fragment"><strong>Protective FOSS License</strong><br>„jeder kann, aber muss auch...“</li>
+						<li class="fragment"><strong>Non-protective FOSS License</strong><br>„jeder kann alles damit tun, solange...“</li>
+						<li class="fragment"><strong>Public Domain</strong><br>„jeder kann alles damit tun“</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Zahlen!</h2>
+					</section>
+
+					<section>
+						<h3>Chris DiBona, Google, Open Source Summit 2011</h3>
+
+						<table>
+							<tr><th>GPL</th><td>48%</td></tr>
+							<tr><th>LGPL</th><td>23%</td></tr>
+							<tr><th>BSD</th><td>14%</td></tr>
+							<tr><th>Apache</th><td>6%</td></tr>
+							<tr><th>MIT</th><td>5%</td></tr>
+							<tr><th>Other</th><td>&lt;5%</td></tr>
+						</table>				 
+		
+						<!-- http://www.theregister.co.uk/2011/03/31/google_on_open_source_licenses/ -->
+					</section>
+
+					<section>
+						<h3>GitHub, 2015</h3>
+
+						<table>
+							<tr><th>MIT</th><td>44.69%</td></tr>
+							<tr><th>Other</th><td>15.68%</td></tr>
+							<tr><th>GPLv2</th><td>12.96%</td></tr>
+							<tr><th>Apache</th><td>11.19%</td></tr>
+							<tr><th>GPLv3</th><td>8.88%</td></tr>
+							<tr><th>BSD 3-clause</th><td>4.53%</td></tr>
+							<tr><th>Unlicense</th><td>1.87%</td></tr>
+							<tr><th>BSD 2-clause</th><td>1.70%</td></tr>
+							<tr><th>LGPLv3</th><td>1.30%</td></tr>
+							<tr><th>AGPLv3</th><td>1.05%</td></tr>
+						</table>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>GNU General Public License</h2>
+					</section>
+
+					<section>
+						<h2>GPL v2</h2>			
+						<p>„Der Klassiker“</p>
+						<ul>
+							<li class="fragment">Existiert seit 1989</li>
+							<li class="fragment">Gesamtes Werk ist betroffen</li>
+							<li class="fragment">Starkes Copyleft: „virale Lizenz“</li>
+							<li class="fragment">Nutzer: Linux (v2), VLC (v2)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>GPL v3</h2>						
+						<p>„Tivoisierung ist böse“</p>
+						<ul>
+							<li class="fragment">Tivoisierung: TiVo-Rekorder mit Linux, aber erfordert digitale Signatur zur Ausführung</li>
+							<li class="fragment">Kompatibilität zur AGPL, nicht kompatibel mit v2</li>
+							<li class="fragment">Expliziter Patentschutz</li>
+							<li class="fragment">Nutzer: WordPress (v2+), Blender (v2+), Drupal (v2+), Bash (v3)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Lesser GPL (LGPL)</h2>
+						<p>„Linking ist okay“</p>
+						<ul>
+							<li class="fragment">Dynamisches Linking</li>
+							<li class="fragment">Nutzender Code kann frei lizenziert werden</li>
+							<li class="fragment">Schwächeres Copyleft als GPL</li>
+							<li class="fragment">Entspricht der Linking/Classpath Exception</li>
+							<li class="fragment">Nutzer: glibc</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Affero GPL (AGPL)</h2>
+						<p>„Network use is distribution“</p>
+						<ul>
+							<li class="fragment">ASP-Loophole</li>
+							<li class="fragment"><small>„[…] your modified version must […] offer all users interacting with it remotely through a computer network (if your version supports such interaction) an opportunity to receive the Corresponding Source […]“</small></li>
+							<li class="fragment">Kompatibel mit GPLv3</li>
+							<li class="fragment">Nutzer: MongoDB, ownCloud, Gitorious, Diaspora</li>
+							<li class="fragment"><em>„Gegner“</em>: Google</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>GNU Free Documentation License</h2>
+						<ul>
+							<li class="fragment">Modifikationen können verboten werden</li>
+							<li class="fragment">Rechtliche Unsicherheit</li>
+							<li class="fragment">Nutzer: Wikipedia (dual), Last.fm</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>BSD/MIT/ISC</h2>
+					</section>
+
+					<section>
+						<h2>BSD 4-clause license</h2>
+						<ul>
+							<li class="fragment">Existiert seit 1990</li>
+							<li class="fragment">Kein Copyleft</li>
+							<li class="fragment">Aber: <pre>3. All advertising materials mentioning features or use of this software must display the following acknowledgement:
+This product includes software developed by the &lt;organization&gt;.</pre></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>BSD 3-clause license</h2>
+						<ul>
+							<li class="fragment">Existiert seit 1999</li>
+							<li class="fragment">Nutzer: Haskell, React, Elm</li>
+							<li class="fragment">Aber: <pre>Neither the name of the &lt;organization&gt; nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</pre></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>BSD 2-clause license</h2>
+						<ul>
+							<li>FreeBSD-Lizenz</li>
+						</ul>
+					</section>
+
+
+					<section>
+						<h2>MIT License</h2>
+						<ul>
+							<li>Funktional äquivalent zur FreeBSD-Lizenz (2-clause)</li>
+							<li class="fragment">Nutzer: RoR, jQuery, X11 (leicht abgewandelt), Bacon.js, Reveal.js</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>ISC License</h2>
+						<ul>
+							<li>Funktional äquivalent zur MIT/FreeBSD-Lizenz</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Ultimativer Vergleich</h2>
+						<div class="row">
+							<small style="width: 50%;"><h3>MIT</h3><pre>Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</pre></small>
+							<small style="width: 50%;"><h3>ISC</h3><pre>Copyright (c) [year], [fullname]
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</pre></small>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<h2>Apache</h2>
+					<ul>
+						<li class="fragment">Schwaches Copyleft</li>
+						<li class="fragment">„Explicit patent grant“</li>
+						<li class="fragment">Von Firmen favorisiert</li>
+						<li class="fragment">Änderungen müssen gekennzeichnet werden</li>
+						<li class="fragment">Nicht kompatibel mit GPL v2</li>
+						<li class="fragment">Nutzer: Apache (duh), Swift, Android</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Mozilla Public License</h2>
+					<p>„Hybrid zwischen BSD und GPL“</p>
+					<ul>
+						<li class="fragment">Ursprünglich für Netscape Navigator geschrieben</li>
+						<li class="fragment">Schwaches Copyleft</li>
+						<li class="fragment">Dateibasierte Lizenz</li>
+						<li class="fragment">Grob vergleichbar mit LGPL, aber nicht direkt kompatibel</li>
+						<li class="fragment">Erstellung eines „größeren Werks“ mit Dual-Lizenzierung</li>
+						<li class="fragment">Nutzer: Mozilla (…)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Eclipse Public License</h2>
+					<p></p>
+					<ul>
+						<li class="fragment">Separate Module dürfen getrennt lizenziert werden</li>						
+						<li class="fragment">Nicht GPL-kompatibel</li>
+						<li class="fragment">„Patent retaliation clause“</li>
+						<li class="fragment">Nutzer: Eclipse, Jetty, H2</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Creative Commons</h2>
+					</section>
+
+					<section>
+						<h2>CC0</h2>
+						<p>Public Domain</p>
+						<ul>
+							<li>Alles erlaubt</li>
+							<li>Kompatibel mit GPL</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>CC-BY</h2>
+						<ul>
+							<li class="fragment">Basislizenz für alle anderen CC-Lizenzen</li>
+							<li class="fragment">Namensnennung erforderlich</li>
+							<li class="fragment">Keine speziellen Klauseln für Code (binary-Problem)</li>
+							<li class="fragment">Patente nicht berücksichtigt</li>
+							<li class="fragment">Nicht kompatibel mit GPL</li>
+							<li class="fragment">Nutzer: Flickr (alle weiteren Lizenzen)</li>
+						</ul>
+						<!-- http://opensource.stackexchange.com/a/1718 -->
+					</section>
+
+					<section>
+						<h2>CC BY-SA</h2>
+						<p>„Share Alike“</p>
+						<ul>
+							<li>Keine Relizenzierung &rarr; Copyleft</li>
+							<li>Nutzer: Wikipedia (dual)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>CC BY-ND</h2>
+						<p>„No Derivatives“</p>
+						<ul>
+							<li>Unveränderte Weitergabe</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>CC BY-NC</h2>
+						<p>„Non Commercial“</p>
+						<ul>
+							<li>Keine kommerzielle Nutzung</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Diverse Kombinationen</h2>
+						<ul>
+							<li>CC BY-NC-SA</li>
+							<li>CC BY-NC-ND</li>
+							<li>&hellip;selbsterklärend</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Unlicense</h2>
+						<ul>
+							<li>Public Domain</li>
+							<li>Nutzer: SQLite</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>?</h2>
+					</section>
+
+					<section>
+						<h2>Beer-ware</h2>
+						<pre style="font-size: 0.5em;">
+/*
+* ----------------------------------------------------------------------------
+* "THE BEER-WARE LICENSE" (Revision 42):
+* <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
+* can do whatever you want with this stuff. If we meet some day, and you think
+* this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
+* ----------------------------------------------------------------------------
+*/						</pre>
+						<ul>
+							<li>„Falls wir uns eines Tages treffen, und es dir wert ist, kauf mir ein Bier“</li>
+						</ul>
+						<!-- https://people.freebsd.org/~phk/ -->
+					</section>
+
+					<section>
+						<h2>Ehemalige Java-Lizenz</h2>
+						<pre class="fragment">[…]<br>You acknowledge  that Licensed  Software is not designed or
+intended for use in the design, construction, operation or maintenance of any nuclear facility.<br>[…]</pre>
+						<pre class="fragment">Java technology is […] not designed, manufactured, or intended for use […] in the operation of nuclear facilities, aircraft navigation or communication systems, air traffic control, direct life support machines, or weapons systems, in which the failure of Java technology could lead directly to death, personal injury, or severe physical or environmental damage.</pre>
+					</section>
+
+					<section>
+						<h2>WTFPL</h2>
+						<ul>
+							<li class="fragment"><a href="http://www.wtfpl.net/">http://www.wtfpl.net/</a></li>
+							<li class="fragment"><small>„There is a long ongoing battle between GPL zealots and BSD fanatics, about which license type is the most free of the two. In fact, both license types have unacceptable obnoxious clauses (such as reproducing a huge disclaimer that is written in all caps) that severely restrain our freedoms. The WTFPL can solve this problem.“</small></li>
+						</ul>
+						<pre style="font-size: 0.5em;" class="fragment">
+      DO WHAT THE **** YOU WANT TO PUBLIC LICENSE 
+                    Version 2, December 2004 
+
+ Copyright (C) 2004 Sam Hocevar <sam@hocevar.net> 
+
+ Everyone is permitted to copy and distribute verbatim or modified 
+ copies of this license document, and changing it is allowed as long 
+ as the name is changed. 
+
+            DO WHAT THE **** YOU WANT TO PUBLIC LICENSE 
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+
+  0. You just DO WHAT THE **** YOU WANT TO.</pre>
+						<!-- http://www.wtfpl.net -->
+					</section>
+				</section>
+
+				<section>
+						<h2>Wahl einer Lizenz</h2>
+						<ul>
+							<li class="fragment">Als Autor: freie Wahl je nach Abhängigkeiten</li>
+							<li class="fragment">Oftmals präferierte Lizenzen in Community (Perl, Python, PHP)</li>
+							<li class="fragment">Kompatibilität zwischen Lizenzen</li>
+							<li class="fragment"><a href="https://choosealicense.com">https://choosealicense.com</a> (GitHub)</li>
+							<li class="fragment"><a href="https://creativecommons.org/choose/">https://creativecommons.org/choose/</a> (CC)</li>
+						</ul>
+				<!-- https://opensource.com/law/13/1/which-open-source-software-license-should-i-use -->
+				</section>
+
+				<section style="text-align: left;" data-transition="convex">
+					<h2 style="font-size: 2em;">/* END OF TERMS AND CONDITIONS */</h2>
+					<p>
+						<span>- Built with Reveal.js</span><br>
+						<span>- Licensed under CC-BY-SA</span><br>
+						- <a href="https://github.com/beheh/sse-licenses">https://github.com/beheh/sse-licenses</a> <br>
+					</p>
+				</section>
+
 			</div>
+
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -37,13 +512,25 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
 		</script>
+
 	</body>
 </html>
