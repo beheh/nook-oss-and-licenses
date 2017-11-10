@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Freie und unfreie Lizenzen – Aktuelle Themen SSE</title>
+		<title>Open Source und freie Lizenzen – MetaNook 2017</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -29,7 +29,7 @@
 			.reveal pre {
 				white-space: pre-wrap;
 			}
-			
+
 			.reveal li > pre {
 				margin-left: 0;
 			}
@@ -46,17 +46,82 @@
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section style="text-align: left;">
-					<h1 style="font-size: 2.5em; line-height: 0.8em;">Lizenzen</h1>
-					<h3>Aktuelle Themen SSE</h3>
-					<p style="line-height: 0.8em; font-size: 1.2em;">
+					<h3 style="text-transform: none">MetaNook 2017:</h3>
+					<h1 style="text-transform: none; font-style: monospace; font-size: 1.5em; line-height: 0.8em;">„Open Source und freie Lizenzen“</h1>
+					<p style="line-height: 0.8em; font-size: 1.3em; margin-top: 0.6em; text-align: right;">
 						<small>
-							Benedict Etzel / <a href="https://github.com/beheh">@beheh</a>
+							&mdash;Benedict Etzel / <a href="https://github.com/beheh">@beheh</a>
 						</small><br>
 						<small><em class="fragment">&uarr; kein Rechtsanwalt</em></small>
 					</p>
+				</section>
+
+				<section>
+					<h2>Wieso?</h2>
+					<ul>
+						<li>Eigenes Werk veröffentlichen</li>
+						<li>Mitstreiter suchen/werden</li>
+						<li>Portfolio aufbauen</li>
+						<li>Unklarheiten bei Verwendung beseitigen</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Begriffe</h2>
+						<ul>
+							<li class="fragment">Free Software („freie Software“)</li>
+							<li class="fragment">Open Source („quelloffen“)</li>
+							<li class="fragment">FOSS/FLOSS</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Gemeinsamkeiten</h2>
+						<ul>
+							<li>Ursprungsmaterial erhältlich</li>
+							<li>3D-Modelle, Code, Audio und mehr!</li>
+							<li>Möglicherweise auf Anfrage</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Freie Software</h2>
+						<ul>
+							<li>Ursprüngliche Bewegung</li>
+							<li>Richard Stallman</li>
+							<li>„4 Freedoms”</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2 style="font-size: 1.2em;">The Free Software Definition (gekürzt)</h2>
+						<ul style="font-size: 0.8em; line-height: 1.4em;">
+							<li>The freedom to run the program as you wish, for any purpose.</li>
+							<li>The freedom to study how the program works, and change it so it does your computing as you wish.</li>
+							<li>The freedom to redistribute copies so you can help your neighbor.</li>
+							<li>The freedom to distribute copies of your modified versions to others.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Open Source</h2>
+						<ul>
+							<li>Copyleft teilweise ein Problem</li>
+							<li>„Restriktive“ Open-Source-Lizenzen</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Loslegen</h2>
+					<ul>
+						<li>Projekte: <a href="https://github.com/explore" target="_blank">GitHub</a>, GitLab&hellip;</li>
+						<li>Communities Gitter, IRC, Discord&hellip;</li>
+						<li>Events: Hacktoberfest&hellip;</li>
+					</ul>
 				</section>
 
 				<section>
@@ -138,11 +203,13 @@
 						<li>README</li>
 					</ul>
 					<p class="fragment">Fertig! <span class="fragment">&hellip;oder?</p>
-					<p><strong class="fragment">Ja, aber:</strong> <span class="fragment">Contributor License Agreement</span><p>
+					<p>
+						<strong class="fragment">Ja, aber:</strong> <span class="fragment">Contributor License Agreement (bzw. DCO)</span>
+					<p>
 				</section>
 
 				<section>
-					<h2>Was steht zur Auswahl?</h2>
+					<h2>Lizenzarten</h2>
 					<ul>
 						<li class="fragment"><strong>Trade Secret</strong><br>„niemand kann irgendetwas damit tun“</li>
 						<li class="fragment"><strong>Proprietary License</strong><br>„manche können manche Dinge tun“</li>
@@ -160,22 +227,22 @@
 					<section>
 						<h3>Chris DiBona, Google, Open Source Summit 2011</h3>
 
-						<table>
+						<table style="font-size: 0.7em;">
 							<tr><th>GPL</th><td>48%</td></tr>
 							<tr><th>LGPL</th><td>23%</td></tr>
 							<tr><th>BSD</th><td>14%</td></tr>
 							<tr><th>Apache</th><td>6%</td></tr>
 							<tr><th>MIT</th><td>5%</td></tr>
 							<tr><th>Other</th><td>&lt;5%</td></tr>
-						</table>				 
-		
+						</table>
+
 						<!-- http://www.theregister.co.uk/2011/03/31/google_on_open_source_licenses/ -->
 					</section>
 
 					<section>
 						<h3>GitHub, 2015</h3>
 
-						<table>
+						<table style="font-size: 0.7em;">
 							<tr><th>MIT</th><td>44.69%</td></tr>
 							<tr><th>Other</th><td>15.68%</td></tr>
 							<tr><th>GPLv2</th><td>12.96%</td></tr>
@@ -197,7 +264,7 @@
 					</section>
 
 					<section>
-						<h2>GPL v2</h2>			
+						<h2>GPL v2</h2>
 						<p>„Der Klassiker“</p>
 						<ul>
 							<li class="fragment">Existiert seit 1989</li>
@@ -208,7 +275,7 @@
 					</section>
 
 					<section>
-						<h2>GPL v3</h2>						
+						<h2>GPL v3</h2>
 						<p>„Tivoisierung ist böse“</p>
 						<ul>
 							<li class="fragment">Tivoisierung: TiVo-Rekorder mit Linux, aber erfordert digitale Signatur zur Ausführung</li>
@@ -289,10 +356,11 @@ This product includes software developed by the &lt;organization&gt;.</pre></li>
 						<ul>
 							<li>Funktional äquivalent zur FreeBSD-Lizenz (2-clause)</li>
 							<li class="fragment">Nutzer: RoR, jQuery, X11 (leicht abgewandelt), Bacon.js, Reveal.js</li>
+							<li>Kompaktere Version: ISC-Lizenz</li>
 						</ul>
 					</section>
 
-					<section>
+					<!--<section>
 						<h2>ISC License</h2>
 						<ul>
 							<li>Funktional äquivalent zur MIT/FreeBSD-Lizenz</li>
@@ -315,7 +383,7 @@ Permission to use, copy, modify, and/or distribute this software for any purpose
 
 THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</pre></small>
 						</div>
-					</section>
+					</section>-->
 				</section>
 
 				<section>
@@ -347,7 +415,7 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 					<h2>Eclipse Public License</h2>
 					<p></p>
 					<ul>
-						<li class="fragment">Separate Module dürfen getrennt lizenziert werden</li>						
+						<li class="fragment">Separate Module dürfen getrennt lizenziert werden</li>
 						<li class="fragment">Nicht GPL-kompatibel</li>
 						<li class="fragment">„Patent retaliation clause“</li>
 						<li class="fragment">Nutzer: Eclipse, Jetty, H2</li>
@@ -386,7 +454,7 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 						<p>„Share Alike“</p>
 						<ul>
 							<li>Keine Relizenzierung &rarr; Copyleft</li>
-							<li>Nutzer: Wikipedia (dual)</li>
+							<li>Nutzer: Wikipedia (dual), StackOverflow</li>
 						</ul>
 					</section>
 
@@ -462,17 +530,17 @@ intended for use in the design, construction, operation or maintenance of any nu
 							<li class="fragment"><small>„There is a long ongoing battle between GPL zealots and BSD fanatics, about which license type is the most free of the two. In fact, both license types have unacceptable obnoxious clauses (such as reproducing a huge disclaimer that is written in all caps) that severely restrain our freedoms. The WTFPL can solve this problem.“</small></li>
 						</ul>
 						<pre style="font-size: 0.5em;" class="fragment">
-      DO WHAT THE **** YOU WANT TO PUBLIC LICENSE 
-                    Version 2, December 2004 
+      DO WHAT THE **** YOU WANT TO PUBLIC LICENSE
+                    Version 2, December 2004
 
- Copyright (C) 2004 Sam Hocevar <sam@hocevar.net> 
+ Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
 
- Everyone is permitted to copy and distribute verbatim or modified 
- copies of this license document, and changing it is allowed as long 
- as the name is changed. 
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name is changed.
 
-            DO WHAT THE **** YOU WANT TO PUBLIC LICENSE 
-   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+            DO WHAT THE **** YOU WANT TO PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
   0. You just DO WHAT THE **** YOU WANT TO.</pre>
 						<!-- http://www.wtfpl.net -->
@@ -483,20 +551,20 @@ intended for use in the design, construction, operation or maintenance of any nu
 						<h2>Wahl einer Lizenz</h2>
 						<ul>
 							<li class="fragment">Als Autor: freie Wahl je nach Abhängigkeiten</li>
-							<li class="fragment">Oftmals präferierte Lizenzen in Community (Perl, Python, PHP)</li>
+							<li class="fragment">Oftmals präferierte Lizenzen in Community (Perl, Python, Javascript, PHP)</li>
 							<li class="fragment">Kompatibilität zwischen Lizenzen</li>
-							<li class="fragment"><a href="https://choosealicense.com">https://choosealicense.com</a> (GitHub)</li>
-							<li class="fragment"><a href="https://creativecommons.org/choose/">https://creativecommons.org/choose/</a> (CC)</li>
+							<li class="fragment"><a href="https://choosealicense.com" target="_blank">https://choosealicense.com</a> (GitHub)</li>
+							<li class="fragment"><a href="https://creativecommons.org/choose/" target="_blank">https://creativecommons.org/choose/</a> (CC)</li>
 						</ul>
 				<!-- https://opensource.com/law/13/1/which-open-source-software-license-should-i-use -->
 				</section>
 
 				<section style="text-align: left;" data-transition="convex">
-					<h2 style="font-size: 2em;">/* END OF TERMS AND CONDITIONS */</h2>
+					<h2 style="font-size: 2em; font-family: monospace">/* END OF TERMS AND CONDITIONS */</h2>
 					<p>
-						<span>- Built with Reveal.js</span><br>
-						<span>- Licensed under CC-BY-SA</span><br>
-						- <a href="https://github.com/beheh/sse-licenses">https://github.com/beheh/sse-licenses</a> <br>
+						<span>- Built with Reveal.js (licensed under MIT)</span><br>
+						<span>- Content licensed under CC-BY-SA</span><br>
+						- <a href="https://github.com/beheh/nook-oss-and-licenses">https://github.com/beheh/nook-oss-and-licenses</a> <br>
 					</p>
 				</section>
 
